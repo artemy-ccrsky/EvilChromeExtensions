@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Recon",
+  "version": "1.0",
+  "description": "Browser recon and exfiltration demo",
+  "permissions": [
+    "tabs",
+    "history",
+    "bookmarks",
+    "storage",
+    "proxy",
+    "management",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Browser Recon"
+  }
+}
