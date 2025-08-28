@@ -29,7 +29,7 @@ EvilChromeExtensions is a collection of offensive Google Chrome extensions used 
 
 | Name                     | Description                                      | Status  |
 |--------------------------|--------------------------------------------------|---------|
-| `cookie-extractor`       | Exfiltrates cookies to attacker host           | ✅ Demo |
+| `cookie-extractor`       | Exfiltrates cookies to attacker host  (Instead of dump DPAPI!)         | ✅ Demo |
 | `keypress-catcher`       | Logs keystrokes and sends to attacker host| ✅ Demo |
 | `clipboard-stealer`      | Leaks copied clipboard text silently              | ✅ Demo |
 | `man-in-the-browser-light` | Minimal MITB injection, alters site content/UI | ✅ Demo |
