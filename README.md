@@ -2,7 +2,7 @@
 # EvilChromeExtensions 🌐😈
 
 Educational Chrome Extensions simulating real-world attacker behavior in the browser.
-Built for **Red Team demos**, **adversary emulation**, and **threat simulation**.
+Built for **Red Teamers**, **Pentesters**, **Adversary emulation**.
 
 ---
 
@@ -10,7 +10,7 @@ Built for **Red Team demos**, **adversary emulation**, and **threat simulation**
 
 EvilChromeExtensions is a collection of offensive Google Chrome extensions used to demonstrate:
 - ✅ Post-exploitation persistence in the browser
-- ✅ Credential/session theft (via cookies, forms, clipboard)
+- ✅ Credential/session theft (via cookies, keyloggers, clipboard stealer)
 - ✅ UI manipulation 
 - ✅ Keylogging and exfiltration
 - ✅ Threat modeling of real-world malicious extensions
@@ -75,10 +75,10 @@ To Run Chrome in Debug mode with stderr:
 
 
 ## References
-https://github.com/Darkrain2009/RedExt
-https://github.com/praetorian-inc/ChromeAlone
-https://github.com/ChoiSG/SharpSilentChrome
-https://github.com/mandatoryprogrammer/CursedChrome
-https://mrd0x.com/spying-with-chromium-browsers-screensharing/
+https://github.com/Darkrain2009/RedExt </br>
+https://github.com/praetorian-inc/ChromeAlone </br>
+https://github.com/ChoiSG/SharpSilentChrome </br>
+https://github.com/mandatoryprogrammer/CursedChrome </br>
+https://mrd0x.com/spying-with-chromium-browsers-screensharing/ </br>
 
 
