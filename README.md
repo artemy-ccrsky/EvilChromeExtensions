@@ -74,6 +74,13 @@ To Run Chrome in Debug mode with stderr:
 5. **Stealth way**. Use [SharpSilentChrome](https://github.com/ChoiSG/SharpSilentChrome) to silently install Chrome Extension
 
 
+## 🔐 Detection & Hardening Tips
+
+- Monitor changes in configuration files (`Preferences`, `Secure Preferences`) made by processes other than `chrome.exe`  
+- Monitor for Chrome processes launched with the `--load-extension` parameter  
+- Harden Enterprise Browser policies (whitelist/blocklist, disable installation of unpacked extensions)  
+
+
 ## References
 https://github.com/Darkrain2009/RedExt </br>
 https://github.com/praetorian-inc/ChromeAlone </br>
