@@ -60,6 +60,11 @@ EvilChromeExtensions is a collection of offensive Google Chrome extensions used 
 2. Change Attacker Host in source code of extension and run Python Flask (for example) server on backend to catch POST Requests
 3. Run Chrome extensions with provided CLI:
 
+#### ⚠️ load-extension option limitations
+
+> The options was finally removed with `DisableLoadExtensionCommandLineSwitch` on 25 September 2025, but it still working on some chromium browsers.
+> Git commit from Google [here](https://chromium.googlesource.com/chromium/src/+/04f6233ce5be7e5e420418b5286f3b0f87ffc28f%5E%21/)
+
 ```powershell
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-features=DisableLoadExtensionCommandLineSwitch --load-extension="C:\Users\user\Desktop\offensive-extension"
 ```
